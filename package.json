@@ -1,0 +1,36 @@
+{
+  "name": "arc-x-pmndrs-colors",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "@pmndrs/branding": "^0.0.7",
+    "@react-spring/three": "9.0.0-rc.3",
+    "@react-three/drei": "3.2.1",
+    "component-material": "^1.0.6",
+    "immer": "^8.0.1",
+    "lerp": "1.0.3",
+    "lodash.debounce": "^4.0.8",
+    "nice-color-palettes": "3.0.0",
+    "postprocessing": "^6.20.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-scripts": "4.0.1",
+    "react-three-fiber": "5.3.11",
+    "react-use-clipboard": "^1.0.7",
+    "react-use-gesture": "9.0.0",
+    "three": "0.124.0",
+    "zustand": "3.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "react-spring-issue-1078": "find node_modules -path \\*@react-spring/\\*/package.json -exec sed -i.bak 's/\"sideEffects\": false/\"sideEffects\": true/g' {} +",
+    "postinstall": "npm run react-spring-issue-1078"
+  },
+  "browserslist": [">0.2%", "not dead", "not ie <= 11", "not op_mini all"]
+}
